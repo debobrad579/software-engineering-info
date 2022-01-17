@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    My Journey
+{% endblock %}
+
+{% block body %}
+    <h2>My Journey</h2>
+    <div class="grid-container">
+        <div>
+            <h3>Godot</h3>
+            <hr>
+            <p>
+                My first real exposure to programming was with the game engine: Godot. Godot is a free and open-sourced software for creating video games; it has its own, custom, built-in language: GDScript. I first started learning with a tutorial series on creating the base to a small RPG by Heartbeast. This tutorial was good to give me the foundation I need for programming and that game engine. After that, I used Godot for a few months, and I took Heartbeast's 1-bit Godot course; which reinforced and improved my knowledge. The final thing I did with Godot was compete in a game jam: an event in which participents get a limitted amount of time to develop a game with a pre-determined theme. I worked with a friend for the theme: lost tech. We ended up making a short demo where the player needs to explore an abandoned laboratory and find pieces of tech in order to progress. You can play the game <a href="https://conscience.itch.io/warehouse-pre-alpha">here</a>.
+            </p>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='img/godot_logo.svg') }}" alt="Godot Logo" id="godot-logo">
+        </div>
+        <div>
+            <h3>Python</h3>
+            <hr>
+            <p>
+                After that game jam finished, I started getting interested in the programming language: Python. I picked up Python with relative ease because it is the primary language that GDScript is based off; however, I did still have a great deal of learning to do. The first thing I made in Python was a file organizer for my downloads folder; this taught be about classes and some of the basic functions in the OS module. After that, I developed a graphic calculator using the Kivy, SymPy, NumPy, and Matplotlib libraries.
+            </p>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='img/python_logo.png') }}" alt="Python Logo" id="python-logo">
+        </div>
+        <div>
+            <h3>Web Development</h3>
+            <hr>
+            <p>
+                About a month after I stopped working on the graphing calculator, a friend told me that Harvard had some free courses on computer science; I looked into that immediately. I found out that there were a few free courses that I could take, so I decided that I wanted to take their course on web development: <i>CS50-W - Web Development with Python and JavaScript</i>. I started with the first lecture after school the very next day; it was on the basics of HTML and CSS. I learned the backend web framework: Django. I also learned SQL for databases. The final major thing I learned in this course was JavaScript: a language famously developed in 10 days, used in the frontend of websites to add interactability.
+            </p>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='img/web_logos.png') }}" alt="JavaScript Logo" id="web-logos">
+        </div>
+        <div>
+            <h3>Artificial Intellegence</h3>
+            <hr>
+            <p>
+                Currently, I'm taking Harvard's course on AI: <i>CS50-AI - Introduction to Artificial Intellegence with Python</i>. This course is much more difficult than CS50-W because it focuses more on theory and mathematics of computer science. I learned many algorithms for solving problems (minimax, DFS/BFS, A*, Backtrack, etc.). I also learned about logical operators (¬, ∧, ∨, ⊕, etc.) and how to use them in code, and basic probability theory.
+            </p>
+        </div>
+    </div>
+{% endblock %}

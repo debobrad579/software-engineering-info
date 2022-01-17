@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block body %}
+    <h2>What is Software Engineering?</h2>
+    <p>
+        Software development is the use of a variety of programming languages to develope software for computers; however, this is only a part fo software engineering as a whole. Software engineers also need to design the software. Let's take website creation as an example. The software engineers will have to think how to creatively design their website in order to make it interesting and look good so people will stay on the site. If the site isn't interesting or looks bad, people won't have much of a reason to stay. The engineers also need to design it in a way that is mobile responsive because many people will access the site from a mobile device. Take this site for example, if you shrink the window, you will see that the navigation links will disappear and be replaced with a hamburger menu that you can click on to reveal the links. Without this, the links might not fit onto a mobile screen. Of course, someone might not directly influence the look and design of the website if they are working for a <abbr title="Facebook, Apple, Amazon, Netflix, Google">FAANG</abbr> company or other large company; the design might be given to them for them to implement. After the engineers know what they need to build and how they want it to look, then they write the code. After that, they will need to test their code with <abbr title="Unit testing is a software development best practice where small tests are written in order to make sure the code still does what it should after code is added or changed.">unit tests</abbr> that were written early on in the coding process. Often, other developers will review each others code to make sure it appeals with the coding standards of the company.
+    </p>
+    <div class="grid-container">
+        <div>
+            <h2>Job Options Include:</h2>
+            <ul>
+                <li>Web Development</li>
+                <ul>
+                    <li>Frontend (Client-Side)</li>
+                    <li>Backend (Server-Side)</li>
+                    <li>Fullstack (Both)</li>
+                    <li>Databases</li>
+                </ul>
+                <li>Game Development</li>
+                <ul>
+                    <li>Interfaces</li>
+                    <li>Graphics</li>
+                    <li>Physics</li>
+                    <li>Artificial Intelligence</li>
+                </ul>
+                <li>Mobile App Development</li>
+                <ul>
+                    <li>iOS</li>
+                    <li>Android</li>
+                </ul>
+            </ul>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='img/software-engineering.jpg') }}" alt="Software Engineering Workflow" id="software-image">
+        </div>
+    </div>
+{% endblock %}
