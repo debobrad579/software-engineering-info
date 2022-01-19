@@ -18,5 +18,10 @@ def my_journey():
     return render_template("my-journey.html", active="my-journey")
 
 
+@app.route("/pathways")
+def pathways():
+    return render_template("pathways.html", active="pathways")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

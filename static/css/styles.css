@@ -152,9 +152,9 @@ nav {
 
 /* Grids */
 .grid-container {
-  display: grid;
-  grid-column-gap: 20px;
-  grid-template-columns: auto auto;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: auto auto;
 }
 
 /* Images */
@@ -168,4 +168,14 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+}
+
+@media (orientation: portrait) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+
+    #godot-logo, #python-logo, #web-logos, #software-image {
+        width: 100%;
+    }
 }

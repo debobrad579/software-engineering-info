@@ -1,0 +1,96 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Pathways
+{% endblock %}
+
+{% block body %}
+    <h2>Pathways</h2>
+    <div class="grid-container">
+        <div>
+            <h3>CS (or CS related) Degree</h3>
+            <hr>
+            <p>
+                A university degree in computer science is the most strait forward way to get a job in software engineering. A degree focuses heavily on the theory behind computing, and many math courses would be required in a computer science program.
+            </p>
+            <div class="grid-container">
+                <div>
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>The production quality is much higher than that of a bootcamp.</li>
+                        <li>Employers are more likely to hire someone with a degree than someone without.</li>
+                        <li>You become skilled at programming in general (practical, theoretical, and mathematical); the skills you learn never go obsolete.</li>
+                        <li>There are many more opportunities for internships than with the other routes.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>It's the most expensive option by far.</li>
+                        <li>It takes multiple years to complete.</li>
+                        <li>There's a large amount of "fluff" in a degree.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='img/harvard.jpg') }}" alt="Harvard" id="godot-logo">
+        </div>
+        <div>
+            <h3>Coding Bootcamp</h3>
+            <hr>
+            <p>
+                A coding bootcamp is typically a 3 to 4-month program that teaches programming skills with the goal of landing the students a job. It normally teaches a particular set of technologies sought out by employers.
+            </p>
+            <div class="grid-container">
+                <div>
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>A bootcamp focuses less on the theory, and more on the practical skills you'll need on the job.</li>
+                        <li>It is very quick to complete when compared to a degree.</li>
+                        <li>Everyone taking the bootcamp with you is in the same position as you.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>While cheeper than a degree, bootcamps are still very expensive: tens of thousands of dollars.</li>
+                        <li>The skills learned in a bootcamp could go obsolete.</li>
+                        <li>A certificate for completing a coding bootcamp holds little to no weight on a resume.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='img/devbootcamp.jpg') }}" alt="Bootcamp" id="python-logo">
+        </div>
+        <div>
+            <h3>Self-Taught</h3>
+            <hr>
+            <p>
+                Being a self-taught programmer is just an elimination of the other two routes. It means, there was no university or bootcamp involved in the learning process. Self-taught programmers can learn from online courses, youtube tutorials, and reading documentation.
+            </p>
+            <div class="grid-container">
+                <div>
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>This route is the cheapest by far; the only costs come from online courses.</li>
+                        <li>It's completely self-paced; you have the freedom to decide what you want to learn and when you want to learn it.</li>
+                        <li>The higher up your role is, the less not having a degree will matter; at higher roles, they only care about the actual skill you possess.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>You have no guidance; you need to figure things out on your own and motivate yourself.</li>
+                        <li>It would be harder to get a job interview.</li>
+                        <li>There aren't any other students in the class to help you out; there is no class.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='img/self-taught.png') }}" alt="JavaScript Logo" id="web-logos">
+        </div>
+    </div>
+{% endblock %}
